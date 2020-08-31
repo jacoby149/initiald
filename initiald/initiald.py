@@ -24,8 +24,10 @@ def filter_py(files):
     def f(s):
         def is_long_enough(s):
             return len(s) > 3
+
         def is_py(s):
             return s[-3:] == ".py"
+
         def is_init(s): 
             # print(s)
             return '__init__.py' in s
@@ -43,6 +45,7 @@ def in_folder(dir, file):
         else:
             return True
     return False
+
 
 def write_init(init, d):
     with open(d + sys_string + "__init__.py", 'w+') as f:
@@ -109,5 +112,6 @@ def create_inits():
 def cleanup_inits():
     dir_set, pys = get_package_structure()
     delete_inits(get_all_dirs(dir_set))
+
 
 create_inits()
