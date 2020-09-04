@@ -4,6 +4,8 @@
 
 Layout python packages such that functions are called straight from the parent directories of the python files they exist in.
 
+Automated creation of __ init __.py files across your local package for easy pip installation. Pip install local, homemade packages easily to boost your workflow and allow for access of custom packages across all of your projects.
+
 ```
 #__setup.py__ of your custom package
 
