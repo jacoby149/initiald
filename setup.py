@@ -7,7 +7,8 @@ setup(name='initiald',
       author='the ghoozie and his friend the affluent jew',
       author_email="you don't need to know this",
       url='i said it was homemade bishhh',
-      packages=setuptools.find_packages()
+      packages=setuptools.find_packages(),
+      install_requires=['psutil', ],
       )
 
 # get sum
